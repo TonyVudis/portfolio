@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artwork — Emily Breedlove</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        megina: ['Megina', 'serif'],
+                        garamond: ['EB Garamond', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-[#4F2972]">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 w-full bg-[#CEC2E0] px-8 py-6 flex items-center gap-4 z-50 border-b border-[#4F2972]">
+        <a href="/">
+            <img src="{{ url_for('static', filename='images/Emilylogo.png') }}" alt="Emily Breedlove Logo" class="w-20 h-20 rounded-full" style="mix-blend-mode: multiply;">
+        </a>
+        <nav class="ml-auto flex gap-8">
+            <a href="/about" class="text-xl font-megina tracking-widest uppercase hover:text-[#4A2880] transition-colors">About</a>
+            <a href="/Gallery" class="text-xl font-megina tracking-widest uppercase hover:text-[#4A2880] transition-colors">Gallery</a>
+            <a href="{{ url_for('static', filename='images/EmResume.png') }}" target="_blank" class="text-xl font-megina tracking-widest uppercase hover:text-[#4A2880] transition-colors">Resume</a>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <div class="relative w-full h-[600px]">
+        <!-- Background Image -->
+        <img src="{{ url_for('static', filename='images/bookproj/bookhero.jpeg') }}" alt="Hero" class="w-full h-full object-cover min-h-[600px]">
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-[#CEC2E0] opacity-60"></div>
+        <!-- Text on top -->
+        <div class="absolute inset-0 flex flex-col justify-center px-16 gap-4 pt-24">
+            <a href="/Gallery" class="text-lg font-garamond tracking-widest uppercase text-[#4A2880] hover:underline">← Back to Gallery</a>
+            <h2 class="text-6xl font-megina text-[#4F2972]">BOOK COVER DESIGN SERIES</h2>
+            <p class="font-garamond text-xl text-[#4F2972]">March 2026</p>
+            <p class="font-garamond text-xl text-black max-w-2xl">For this project, the goal was creating a cohesive book series that teaches to balance cohesiveness while still having independent designs. After first researching a series whether it’s already a book, or a
+            movie or even a video game then creating sketch ideas. After sketching
+            placing everything in Adobe Illustrator.</p>
+        </div>
+    </div>
+
+    <!-- Process Section -->
+    <div class="w-full border-t border-[#CEC2E0] px-16 py-16" data-aos="fade-up">
+        <p class="text-4xl font-megina tracking-widest uppercase text-[#4F2972] mb-4">Process:</p>
+        <div class="flex gap-4">
+            <div class="w-4/10">
+                <img src="{{ url_for('static', filename='images/bookproj/Processbook1.png') }}" alt="Process 1" class="w-full object-cover mb-4">
+            </div>
+            <div class="w-1/2 flex items-center ml-auto">
+                <p><span class="font-garamond text-xl text-[#4F2972]">I struggled the most with trying to figure out what view of the character I wanted to
+                portray that could most show the character and all the details about them. Once I
+                was able to distinct that, it made my process way easier. </span></p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- book1 Iterations Section -->
+    <div class="w-full border-t border-[#CEC2E0] px-16 py-16" data-aos="fade-up">
+        <p class="text-4xl font-megina tracking-widest uppercase text-[#4F2972] mb-4">Book 1 Iterations:</p>
+        <div class="flex gap-8">
+            <div class="w-1/2 flex flex-col items-center">
+                <img src="{{ url_for('static', filename='images/bookproj/book1iteration1.png') }}" alt="Iteration 1" class="w-full object-cover mb-4">
+            </div>
+            <div class="w-1/2 flex flex-col items-center">
+                <img src="{{ url_for('static', filename='images/bookproj/book1iteration2.png') }}" alt="Iteration 3" class="w-full object-cover mb-4">
+            </div>
+            <div class="w-1/2 flex flex-col items-center ml-auto">
+                <p><span class="font-garamond text-xl text-[#4F2972]">For each character I drew them individually by shape, so that I could render
+                them to the best ability. I started with a base of colors and then added highlights
+                and shadows. The mask was one of the biggest aspects of this character so I played around with a
+                lot of different iterations of the mask. The lanterns were specifically drawn as a base first and then I added highlights
+                and shadows as needed to help create more depth. The imagery I wanted to go with was more of a fantasy book, which
+                most books like that have a lot of detail. For the columns I added the tattoo on the arm of
+                the character as the pattern and added gold rims to the
+                windows to create a contrast between the dark columns
+                and backgrounds.</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- book2 Iterations Section -->
+    <div class="w-full border-t border-[#CEC2E0] px-16 py-16" data-aos="fade-up">
+        <p class="text-4xl font-megina tracking-widest uppercase text-[#4F2972] mb-4">Book 2 Iterations:</p>
+        <div class="flex gap-8">
+            <div class="w-1/2 flex flex-col items-center">
+                <img src="{{ url_for('static', filename='images/bookproj/book2iteration1.png') }}" alt="Iteration 1" class="w-full object-cover mb-4">
+            </div>
+            <div class="w-1/2 flex flex-col items-center">
+                <img src="{{ url_for('static', filename='images/bookproj/book2iteration2.png') }}" alt="Iteration 3" class="w-full object-cover mb-4">
+            </div>
+            <div class="w-1/2 flex flex-col items-center ml-auto">
+                <p><span class="font-garamond text-xl text-[#4F2972]">For this book design I wanted to still incorporate the window background
+                idea. In the game she’s inspired off of Japanese style things. So I added Japanese styled pattern
+                doors for the flaps and then added more detail to her character. Another iteration to keep the
+                overall cohesiveness between the books was changing around the text placement. Another thing I struggled
+                with was find a concept for the hanging aspect of this book design. I also later for all of the
+                books added more logos to the back next to the barcode to add clairty of what the book is
+                inspired off of.</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- book3 Iterations Section -->
+    <div class="w-full border-t border-[#CEC2E0] px-16 py-16" data-aos="fade-up">
+        <p class="text-4xl font-megina tracking-widest uppercase text-[#4F2972] mb-4">Book 3 Iterations:</p>
+        <div class="flex gap-8">
+            <div class="w-1/2 flex flex-col items-center">
+                <img src="{{ url_for('static', filename='images/bookproj/book3iteration1.png') }}" alt="Iteration 1" class="w-full object-cover mb-4">
+            </div>
+            <div class="w-1/2 flex flex-col items-center">
+                <img src="{{ url_for('static', filename='images/bookproj/book3iteration2.png') }}" alt="Iteration 3" class="w-full object-cover mb-4">
+            </div>
+            <div class="w-1/2 flex flex-col items-center ml-auto">
+                <p><span class="font-garamond text-xl text-[#4F2972]">I struggled with figuring out what
+                to put for the cohesive background but I worked on the character design first that way the background felt
+                like it went with the character. I wanted crescent moons to be all over the book because that’s
+                what this character is known for in game. But I wanted to still stick on
+                theme with the windows. With the text I wanted some of the text to be
+                behind the character to add depth on the fantasy style book. I ended up adding vines from
+                the place this character is from as the hanging piece for the book and adding in clouds from the first and
+                second book but different colors so it stayed on theme.</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Moodboard Section -->
+    <div class="w-full border-t border-[#CEC2E0] px-16 py-16" data-aos="fade-up">
+        <p class="text-4xl font-megina tracking-widest uppercase text-[#4F2972] mb-4">Moodboard:</p>
+        <div class="flex gap-8">
+            <div class="w-3/5 flex flex-col items-center ml-auto">
+                <img src="{{ url_for('static', filename='images/bookproj/moodboardbook.png') }}" alt="Iteration 1" class="w-full object-cover mb-4">
+            </div>
+        </div>
+    </div>
+
+    <!-- book 1 Final -->
+    <div class="w-full border-t border-[#CEC2E0] px-16 py-16" data-aos="fade-up">
+        <p class="text-4xl font-megina tracking-widest uppercase text-[#4F2972] mb-4">Book 1 Final Design:</p>
+
+        <div class="flex justify-center">
+            <div class="w-1/2 flex flex-col items-center ml-auto mr-40">
+                <img src="{{ url_for('static', filename='images/bookproj/maskcastedinmoonbook.png') }}" alt="Final 3" class="w-4/5 scale-125 object-cover">
+            </div>
+        </div>
+
+        <div class="flex px-24 py-24 gap-8">
+            <div class="w-1/4 flex flex-col items-center">
+                <img src="{{ url_for('static', filename='images/bookproj/XiaoFrontCover.png') }}" alt="Final 1" class="w-full scale-110 object-contain">
+            </div>
+            <div class="w-1/4 flex flex-col items-center">
+                <img src="{{ url_for('static', filename='images/bookproj/XiaoBackCover.png') }}" alt="Final 2" class="w-full scale-110 object-contain">
+            </div>
+            <div class="w-1/4 flex flex-col items-center">
+                <img src="{{ url_for('static', filename='images/bookproj/XiaoFullBook.png') }}" alt="Final 4" class="w-full scale-110 object-contain">
+            </div>
+            <div class="w-1/4 flex flex-col items-center">
+                <img src="{{ url_for('static', filename='images/bookproj/XiaoSideFlaps.png') }}" alt="Final 4" class="w-full scale-110 object-contain ">
+            </div>
+        </div>
+    </div>
+
+    <!-- Book2 Final-->
+    <div class="w-full border-t border-[#CEC2E0] px-16 py-16" data-aos="fade-up">
+        <p class="text-4xl font-megina tracking-widest uppercase text-[#4F2972] mb-4">Book 2 Final Design:</p>
+
+        <div class="flex justify-center">
+            <div class="w-1/2 flex flex-col items-center ml-auto mr-40">
+                <img src="{{ url_for('static', filename='images/bookproj/lawsofeternalbook.png') }}" alt="Final 3" class="w-4/5 scale-125 object-cover">
+            </div>
+        </div>
+
+        <div class="flex px-24 py-24 gap-8">
+            <div class="w-1/4 flex flex-col items-center">
+                <img src="{{ url_for('static', filename='images/bookproj/raidenbookfront.png') }}" alt="Final 1" class="w-full scale-110 object-contain">
+            </div>
+            <div class="w-1/4 flex flex-col items-center">
+                <img src="{{ url_for('static', filename='images/bookproj/raidenbackcover.png') }}" alt="Final 2" class="w-full scale-110 object-contain">
+            </div>
+            <div class="w-1/4 flex flex-col items-center">
+                <img src="{{ url_for('static', filename='images/bookproj/raidenfullsleeve.png') }}" alt="Final 4" class="w-full scale-110 object-contain">
+            </div>
+            <div class="w-1/4 flex flex-col items-center">
+                <img src="{{ url_for('static', filename='images/bookproj/raidenflaps.png') }}" alt="Final 4" class="w-full scale-110 object-contain ">
+            </div>
+        </div>
+    </div>
+
+    <!--Book3 Final-->
+    <div class="w-full border-t border-[#CEC2E0] px-16 py-16" data-aos="fade-up">
+        <p class="text-4xl font-megina tracking-widest uppercase text-[#4F2972] mb-4">Book 3 Final Design:</p>
+
+        <div class="flex justify-center">
+            <div class="w-1/2 flex flex-col items-center ml-auto mr-40">
+                <img src="{{ url_for('static', filename='images/bookproj/Cresentmoonbook.png') }}" alt="Final 3" class="w-4/5 scale-125 object-cover">
+            </div>
+        </div>
+
+        <div class="flex px-24 py-24 gap-8">
+            <div class="w-1/4 flex flex-col items-center">
+                <img src="{{ url_for('static', filename='images/bookproj/colofrontbook.png') }}" alt="Final 1" class="w-full scale-110 object-contain">
+            </div>
+            <div class="w-1/4 flex flex-col items-center">
+                <img src="{{ url_for('static', filename='images/bookproj/colobackdesign.png') }}" alt="Final 2" class="w-full scale-110 object-contain">
+            </div>
+            <div class="w-1/4 flex flex-col items-center">
+                <img src="{{ url_for('static', filename='images/bookproj/colofullsleeve.png') }}" alt="Final 4" class="w-full scale-110 object-contain">
+            </div>
+            <div class="w-1/4 flex flex-col items-center">
+                <img src="{{ url_for('static', filename='images/bookproj/coloflapsleeves.png') }}" alt="Final 4" class="w-full scale-110 object-contain ">
+            </div>
+        </div>
+    </div>
+
+    <!--Overall Final-->
+    <div class="w-full border-t border-[#CEC2E0] px-16 py-16" data-aos="fade-up">
+        <p class="text-4xl font-megina tracking-widest uppercase text-[#4F2972] mb-4">Final 3 Book Mockups:</p>
+
+        <div class="flex px-24 py-24 gap-8">
+            <div class="w-1/4 flex flex-col items-center">
+                <img src="{{ url_for('static', filename='images/bookproj/3bookslayingdown.png') }}" alt="Final 1" class="w-full scale-110 object-contain">
+            </div>
+            <div class="w-1/4 flex flex-col items-center">
+                <img src="{{ url_for('static', filename='images/bookproj/3bookspread.png') }}" alt="Final 2" class="w-full scale-110 object-contain">
+            </div>
+            <div class="w-1/4 flex flex-col items-center">
+                <img src="{{ url_for('static', filename='images/bookproj/3booksspreadstack.png') }}" alt="Final 4" class="w-full scale-110 object-contain">
+            </div>
+            <div class="w-1/4 flex flex-col items-center">
+                <img src="{{ url_for('static', filename='images/bookproj/3booksstanding.png') }}" alt="Final 4" class="w-full scale-110 object-contain ">
+            </div>
+        </div>
+    </div>
+
+     <!-- Footer -->
+    <footer class="w-full border-t border-white bg-[#CEC2E0] px-8 py-6 flex items-center justify-between">
+        <div class="flex flex-col gap-1">
+            <p class="text-lg font-megina tracking-widest">emilybreedlove.design@gmail.com</p>
+            <a href="https://www.linkedin.com/in/emily-breedlove-989a7b28a/" target="_blank" class="text-md font-garamond tracking-widest uppercase underline hover:text-[#4A2880] transition-colors">LinkedIn</a>
+            <p class="text-lg font-megina tracking-widest uppercase text-[#4F2972]">© 2026 Emily Breedlove</p>
+        <div>
+    </footer>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+
+    <script>
+    let lastScroll = 0;
+    const header = document.querySelector('header');
+
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.scrollY;
+
+        if (currentScroll > lastScroll && currentScroll > 80) {
+            // Scrolling down - hide header
+            header.style.transform = 'translateY(-100%)';
+            header.style.transition = 'transform 0.3s ease';
+        } else {
+            // Scrolling up - show header
+            header.style.transform = 'translateY(0)';
+            header.style.transition = 'transform 0.3s ease';
+        }
+
+        lastScroll = currentScroll;
+    });
+    </script>
+</body>
+</html>

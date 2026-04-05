@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artwork — Emily Breedlove</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        megina: ['Megina', 'serif'],
+                        garamond: ['EB Garamond', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-[#4F2972]">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 w-full bg-[#CEC2E0] px-8 py-6 flex items-center gap-4 z-50 border-b border-[#4F2972]">
+        <a href="/">
+            <img src="{{ url_for('static', filename='images/Emilylogo.png') }}" alt="Emily Breedlove Logo" class="w-20 h-20 rounded-full" style="mix-blend-mode: multiply;">
+        </a>
+        <nav class="ml-auto flex gap-8">
+            <a href="/about" class="text-xl font-megina tracking-widest uppercase hover:text-[#4A2880] transition-colors">About</a>
+            <a href="/Gallery" class="text-xl font-megina tracking-widest uppercase hover:text-[#4A2880] transition-colors">Gallery</a>
+            <a href="{{ url_for('static', filename='images/EmResume.png') }}" target="_blank" class="text-xl font-megina tracking-widest uppercase hover:text-[#4A2880] transition-colors">Resume</a>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <div class="relative w-full h-[600px]">
+        <!-- Background Image -->
+        <img src="{{ url_for('static', filename='images/designhistProj/historyprojhero.jpeg') }}" alt="Hero" class="w-full h-full object-cover min-h-[600px]">
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-[#CEC2E0] opacity-60"></div>
+        <!-- Text on top -->
+        <div class="absolute inset-0 flex flex-col justify-center px-16 gap-4 pt-24">
+            <a href="/Gallery" class="text-lg font-garamond tracking-widest uppercase text-[#4A2880] hover:underline">← Back to Gallery</a>
+            <h2 class="text-6xl font-megina text-[#4F2972]">DESIGN HISTORY BOOK</h2>
+            <p class="font-garamond text-xl text-[#4F2972]">April 2026</p>
+            <p class="font-garamond text-xl text-black max-w-2xl">For this project, creating an eight-page, saddle stitched booklet
+            incorporating self written text based on the Design History Essay.
+            Using a grid system layout and designing a design movement or
+            designer.</p>
+        </div>
+    </div>
+
+    <!-- Process Section -->
+    <div class="w-full border-t border-[#CEC2E0] px-16 py-16" data-aos="fade-up">
+        <p class="text-4xl font-megina tracking-widest uppercase text-[#4F2972] mb-4">Process:</p>
+        <div class="flex">
+            <div class="w-1/2 flex flex-col items-center pr-8">
+                <img src="{{ url_for('static', filename='images/designhistproj/sketch1history.png') }}" alt="Process 1" class="w-4/5 object-cover mb-4">
+                <img src="{{ url_for('static', filename='images/designhistproj/sketch2history.png') }}" alt="Process 2" class="w-4/5 object-cover mb-4">
+
+            </div>
+            <div class="w-1/2 flex flex-col items-center pl-8 border-l border-[#CEC2E0]">
+                <img src="{{ url_for('static', filename='images/designhistproj/sketch3history.png') }}" alt="Process 2" class="w-4/5 object-cover mb-4">
+                <img src="{{ url_for('static', filename='images/designhistproj/sketch4history.png') }}" alt="Process 2" class="w-4/5 object-cover mb-4">
+
+            </div>
+            <div class="w-1/2 flex flex-col items-center pl-8 border-l border-[#CEC2E0]">
+                <p><span class="font-garamond text-xl text-[#4F2972]">I struggled at first finding a grid system
+                that I found that was interesting and still
+                had that Art Nouveau style of movement.
+                Having this basis of the sketching was
+                helpful so I could make the basic shapes
+                on InDesign and then figure out more
+                detail orientated things after.</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- page1 Iterations Section -->
+    <div class="w-full border-t border-[#CEC2E0] px-16 py-16" data-aos="fade-up">
+        <p class="text-4xl font-megina tracking-widest uppercase text-[#4F2972] mb-4">Page 1 Iterations:</p>
+        <div class="flex gap-1">
+            <div class="w-1/2 flex flex-col items-center">
+                <img src="{{ url_for('static', filename='images/designhistproj/iteration11history.png') }}" alt="Iteration 1" class="w-4/5 object-cover mb-4">
+                <img src="{{ url_for('static', filename='images/designhistproj/iteration12history.png') }}" alt="Iteration 1" class="w-4/5 object-cover mb-4">
+            </div>
+            <div class="w-1/2 flex flex-col items-center">
+                <img src="{{ url_for('static', filename='images/designhistproj/iteration13history.png') }}" alt="Iteration 3" class="w-4/5 object-cover mb-4">
+                <img src="{{ url_for('static', filename='images/designhistproj/iteration14history.png') }}" alt="Iteration 1" class="w-4/5 object-cover mb-4">
+                <img src="{{ url_for('static', filename='images/designhistproj/iteration15history.png') }}" alt="Iteration 1" class="w-4/5 object-cover mb-4">
+            </div>
+            <div class="w-1/2 flex flex-col items-center ml-auto">
+                <p><span class="font-garamond text-xl text-[#4F2972]">I struggled with this design because I wanted
+                something that flowed over onto the back page to make it more visually interesting. I tried working around with different color
+                combinations and different typography. I
+                wanted something that was bold but wasn’t
+                entirely sans serif due to the nature of the
+                Art Nouveau movement. I also changed the
+                background color to better tie to the other
+                pages.
+                </span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- page2 Iterations Section -->
+    <div class="w-full border-t border-[#CEC2E0] px-16 py-16" data-aos="fade-up">
+        <p class="text-4xl font-megina tracking-widest uppercase text-[#4F2972] mb-4">Page 2 Iterations:</p>
+        <div class="flex gap-8">
+            <div class="w-1/2 flex flex-col items-center">
+                <img src="{{ url_for('static', filename='images/designhistproj/iteration21history.png') }}" alt="Iteration 1" class="w-4/5 object-cover mb-4">
+                <img src="{{ url_for('static', filename='images/designhistproj/iteration22history.png') }}" alt="Iteration 1" class="w-4/5 object-cover mb-4">
+            </div>
+            <div class="w-1/2 flex items-center">
+                <img src="{{ url_for('static', filename='images/designhistproj/iteration23history.png') }}" alt="Iteration 3" class="w-4/5 object-cover mb-4">
+            </div>
+            <div class="w-1/2 flex flex-col items-center ml-auto">
+                <p><span class="font-garamond text-xl text-[#4F2972]">I knew from the beginning that i wanted more text and design interaction to create a unique Art Nouveau
+                     magazine. I incorporated ornate designs and flowers pieces at first. Then I started to progress and made bigger design elements with the text as the smaller 
+                     piece to create a more intriguing design. 
+                </span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- page3 Iterations Section -->
+    <div class="w-full border-t border-[#CEC2E0] px-16 py-16" data-aos="fade-up">
+        <p class="text-4xl font-megina tracking-widest uppercase text-[#4F2972] mb-4">Page 3 Iterations:</p>
+        <div class="flex gap-8">
+            <div class="w-1/2 flex flex-col items-center">
+                <img src="{{ url_for('static', filename='images/designhistproj/iteration31history.png') }}" alt="Iteration 1" class="w-4/5 object-cover mb-4">
+                <img src="{{ url_for('static', filename='images/designhistproj/iteration32history.png') }}" alt="Iteration 1" class="w-4/5 object-cover mb-4">
+            </div>
+            <div class="w-1/2 flex items-center">
+                <img src="{{ url_for('static', filename='images/designhistproj/iteration33history.png') }}" alt="Iteration 3" class="w-4/5 object-cover mb-4">
+            </div>
+            <div class="w-1/2 flex flex-col items-center ml-auto">
+                <p><span class="font-garamond text-xl text-[#4F2972]">At first I only put the images in frames
+                but I wanted something that felt more
+                interactive with the piece. Like with the
+                flowers, they felt to stagnant and out of
+                place since they weren’t interacting and
+                just floating on the page. To solve this I
+                added more unique frames and created
+                clipping masks for the images. I also
+                made the caption more interactive with
+                the image of the girl by making the text
+                curved.
+                </span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- page4 Iterations Section -->
+    <div class="w-full border-t border-[#CEC2E0] px-16 py-16" data-aos="fade-up">
+        <p class="text-4xl font-megina tracking-widest uppercase text-[#4F2972] mb-4">Page 4 Iterations:</p>
+        <div class="flex gap-8">
+            <div class="w-1/2 flex flex-col items-center">
+                <img src="{{ url_for('static', filename='images/designhistproj/iteration41history.png') }}" alt="Iteration 1" class="w-4/5 object-cover mb-4">
+                <img src="{{ url_for('static', filename='images/designhistproj/iteration42history.png') }}" alt="Iteration 1" class="w-4/5 object-cover mb-4">
+            </div>
+            <div class="w-1/2 flex items-center">
+                <img src="{{ url_for('static', filename='images/designhistproj/iteration43history.png') }}" alt="Iteration 3" class="w-4/5 object-cover mb-4">
+            </div>
+            <div class="w-1/2 flex flex-col items-center ml-auto">
+                <p><span class="font-garamond text-xl text-[#4F2972]">When I first put the shapes together
+                on InDesign I had the middle
+                shapes together. But once I put
+                images inside of the separate shapes
+                it looked unbalanced. So I merged
+                the shapes together to create a
+                unique photo frame. I got the shape
+                inspiration from the frames that are
+                often used in Art Nouveau. I then
+                just flipped them different ways to
+                create new shapes.
+                </span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- page5 Iterations Section -->
+    <div class="w-full border-t border-[#CEC2E0] px-16 py-16" data-aos="fade-up">
+        <p class="text-4xl font-megina tracking-widest uppercase text-[#4F2972] mb-4">Page 5 Iterations:</p>
+        <div class="flex gap-8">
+            <div class="w-1/2 flex flex-col items-center">
+                <img src="{{ url_for('static', filename='images/designhistproj/iteration51history.png') }}" alt="Iteration 1" class="w-4/5 object-cover mb-4">
+                <img src="{{ url_for('static', filename='images/designhistproj/iteration52history.png') }}" alt="Iteration 1" class="w-4/5 object-cover mb-4">
+            </div>
+            <div class="w-1/2 flex items-center">
+                <img src="{{ url_for('static', filename='images/designhistproj/iteration53history.png') }}" alt="Iteration 3" class="w-4/5 object-cover mb-4">
+            </div>
+            <div class="w-1/2 flex flex-col items-center ml-auto">
+                <p><span class="font-garamond text-xl text-[#4F2972]">I also then made this frame for
+                the image an arch which is a
+                commonly used theme in Art
+                Nouveau. And then curved the
+                caption as well to balance that
+                space out.I also added more spacing to the quotes so they
+                didn’t feel so cramped. Also for most of these
+                iterations I hadn’t yet added a pattern to the
+                beige background. But when I did it made it
+                overall visually cohesive to Art Nouveau.
+                </span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- page6 Iterations Section -->
+    <div class="w-full border-t border-[#CEC2E0] px-16 py-16" data-aos="fade-up">
+        <p class="text-4xl font-megina tracking-widest uppercase text-[#4F2972] mb-4">Page 6 Iterations:</p>
+        <div class="flex gap-8">
+            <div class="w-1/2 flex flex-col items-center">
+                <img src="{{ url_for('static', filename='images/designhistproj/iteration61history.png') }}" alt="Iteration 1" class="w-4/5 object-cover mb-4">
+                <img src="{{ url_for('static', filename='images/designhistproj/iteration62history.png') }}" alt="Iteration 1" class="w-4/5 object-cover mb-4">
+            </div>
+            <div class="w-1/2 flex flex-col items-center">
+                <img src="{{ url_for('static', filename='images/designhistproj/iteration63history.png') }}" alt="Iteration 3" class="w-4/5 object-cover mb-4">
+                <img src="{{ url_for('static', filename='images/designhistproj/iteration64history.png') }}" alt="Iteration 1" class="w-4/5 object-cover mb-4">
+
+            </div>
+            <div class="w-1/2 flex flex-col items-center ml-auto">
+                <p><span class="font-garamond text-xl text-[#4F2972]">For this page I had the original frame with the
+                    line coming out of it red and had the building of
+                    Moulin Rouge but I swapped it with the original
+                    poster I had in the middle. I did this because it
+                    was distracting as the only building on the page. I
+                    then placed an orange and yellow illustration in the
+                    middle and kept the “The Kiss” illustration on the
+                    next page creating a more cohesive color palette.
+                </span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- page7 Iterations Section -->
+    <div class="w-full border-t border-[#CEC2E0] px-16 py-16" data-aos="fade-up">
+        <p class="text-4xl font-megina tracking-widest uppercase text-[#4F2972] mb-4">Page 7 Iterations:</p>
+        <div class="flex gap-8">
+            <div class="w-1/2 flex flex-col items-center">
+                <img src="{{ url_for('static', filename='images/designhistproj/iteration71history.png') }}" alt="Iteration 1" class="w-4/5 object-cover mb-4">
+                <img src="{{ url_for('static', filename='images/designhistproj/iteration72history.png') }}" alt="Iteration 1" class="w-4/5 object-cover mb-4">
+            </div>
+            <div class="w-1/2 flex flex-col items-center">
+                <img src="{{ url_for('static', filename='images/designhistproj/iteration73history.png') }}" alt="Iteration 3" class="w-4/5 object-cover mb-4">
+                <img src="{{ url_for('static', filename='images/designhistproj/iteration74history.png') }}" alt="Iteration 1" class="w-4/5 object-cover mb-4">
+            </div>
+            <div class="w-1/2 flex flex-col items-center ml-auto">
+                <p><span class="font-garamond text-xl text-[#4F2972]">For this page I ended up using leaves as the unique
+                flowers for this page. I later changed it to a blue
+                color to be correlate with the yellow/orange color
+                palette I had for this page spread. I had a flower
+                header on the top of the title but it felt too isolated
+                and stood out.
+                </span></p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Moodboard Section -->
+    <div class="w-full border-t border-[#CEC2E0] px-16 py-16" data-aos="fade-up">
+        <p class="text-4xl font-megina tracking-widest uppercase text-[#4F2972] mb-4">Moodboard:</p>
+        <div class="flex gap-8">
+            <div class="w-3/5 flex flex-col items-center ml-auto">
+                <img src="{{ url_for('static', filename='images/designhistproj/moodboardhistory.png') }}" alt="Iteration 1" class="w-4/5 object-cover mb-4">
+            </div>
+        </div>
+    </div>
+
+    <!-- book 1 Final -->
+    <div class="w-full border-t border-[#CEC2E0] px-16 py-16" data-aos="fade-up">
+        <p class="text-4xl font-megina text-center tracking-widest uppercase text-[#4F2972] mb-4">Final Design:</p>
+
+        <div class="flex px-24 py-24 gap-16">
+            <div class="w-1/2 flex flex-col items-start">
+                <img src="{{ url_for('static', filename='images/designhistproj/final1history.png') }}" alt="Final 2" class="w-full scale-110 object-contain">
+            </div>
+            <div class="w-1/2 flex flex-col items-center">
+                <img src="{{ url_for('static', filename='images/designhistproj/final2history.png') }}" alt="Final 4" class="w-full scale-110 object-contain">
+            </div>
+        </div>
+
+        <div class="flex px-24 py-24 gap-16">
+            <div class="w-1/2 flex flex-col items-start">
+                <img src="{{ url_for('static', filename='images/designhistproj/final3history.png') }}" alt="Final 2" class="w-full scale-110 object-contain">
+            </div>
+            <div class="w-1/2 flex flex-col items-center">
+                <img src="{{ url_for('static', filename='images/designhistproj/final4history.png') }}" alt="Final 4" class="w-full scale-110 object-contain">
+            </div>
+        </div>
+    </div>
+
+    <!--Mock Final-->
+    <div class="w-full border-t border-[#CEC2E0] px-16 py-16" data-aos="fade-up">
+        <p class="text-4xl font-megina tracking-widest uppercase text-[#4F2972] mb-4">Final Mockup:</p>
+
+        <div class="flex px-24 py-24 gap-8">
+            <div class="w-1/2 flex flex-col items-center gap-8">
+                <img src="{{ url_for('static', filename='images/designhistproj/mock1history.png') }}" alt="Final 1" class="w-full h-96 object-contain">
+                <img src="{{ url_for('static', filename='images/designhistproj/mock3history(1).png') }}" alt="Final 4" class="w-full h-96 object-contain">
+
+            </div>
+            <div class="w-1/2 flex flex-col items-center gap-8 ">
+                <img src="{{ url_for('static', filename='images/designhistproj/mock2history.png') }}" alt="Final 2" class="w-full h-96 object-contain">
+                <img src="{{ url_for('static', filename='images/designhistproj/mock4history.png') }}" alt="Final 4" class="w-full h-96 object-contain ">
+            </div>
+        </div>
+    </div>
+
+     <!-- Footer -->
+    <footer class="w-full border-t border-white bg-[#CEC2E0] px-8 py-6 flex items-center justify-between">
+        <div class="flex flex-col gap-1">
+            <p class="text-lg font-megina tracking-widest">emilybreedlove.design@gmail.com</p>
+            <a href="https://www.linkedin.com/in/emily-breedlove-989a7b28a/" target="_blank" class="text-md font-garamond tracking-widest uppercase underline hover:text-[#4A2880] transition-colors">LinkedIn</a>
+            <p class="text-lg font-megina tracking-widest uppercase text-[#4F2972]">© 2026 Emily Breedlove</p>
+        <div>
+    </footer>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+
+    <script>
+    let lastScroll = 0;
+    const header = document.querySelector('header');
+
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.scrollY;
+
+        if (currentScroll > lastScroll && currentScroll > 80) {
+            // Scrolling down - hide header
+            header.style.transform = 'translateY(-100%)';
+            header.style.transition = 'transform 0.3s ease';
+        } else {
+            // Scrolling up - show header
+            header.style.transform = 'translateY(0)';
+            header.style.transition = 'transform 0.3s ease';
+        }
+
+        lastScroll = currentScroll;
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap');
+
+@font-face {
+    font-family: 'Megina';
+    src: url('../Megina.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Megina';
+    src: url('../Megina.ttf') format('truetype');
+}
+
+* {
+    cursor: url('/static/images/cursor1.png'), auto;
+}
+
+a, button {
+    cursor: url('/static/images/cursor2.png'), pointer;
+}

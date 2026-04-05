@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artwork — Emily Breedlove</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        megina: ['Megina', 'serif'],
+                        garamond: ['EB Garamond', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-[#4F2972]">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 w-full bg-[#CEC2E0] px-8 py-6 flex items-center gap-4 z-50 border-b border-[#4F2972]">
+        <a href="/">
+            <img src="{{ url_for('static', filename='images/Emilylogo.png') }}" alt="Emily Breedlove Logo" class="w-20 h-20 rounded-full" style="mix-blend-mode: multiply;">
+        </a>
+        <nav class="ml-auto flex gap-8">
+            <a href="/about" class="text-xl font-megina tracking-widest uppercase hover:text-[#4A2880] transition-colors">About</a>
+            <a href="/Gallery" class="text-xl font-megina tracking-widest uppercase hover:text-[#4A2880] transition-colors">Gallery</a>
+        </nav>
+    </header>
+
+    <div class="w-full h-px bg-white mt-20"></div>
+
+    <!-- Artwork Page -->
+    <section class="flex min-h-screen">
+
+        <!-- Left - Image -->
+        <div class="w-1/2 p-12 flex items-center justify-center border-r border-white">
+            <img src="{{ url_for('static', filename='images/snake1em.png') }}" alt="Snake 1" class="max-w-full max-h-screen object-contain">
+        </div>
+
+        <!-- Right - Details -->
+        <div class="w-1/2 p-12 flex flex-col justify-center gap-6">
+            <a href="/Gallery" class="text-md font-garamond tracking-widest uppercase text-[#4A2880] hover:underline">← Back to Gallery</a>
+            <h2 class="text-8xl font-megina">Placeholder Title</h2>
+            <div class="flex flex-col gap-2 text-gray-500 text-sm tracking-widest uppercase">
+                <p><span class="font-garamond text-lg text-[#4F2972]">Time of Project</span></p>
+            </div>
+            <p class="text-[#4F2972]-600 font-garamond text-lg leading-relaxed">Placeholder description.</p>
+        </div>
+
+    </section>
+
+    <!-- Process Section -->
+    <div class="w-full border-t border-[#CEC2E0] px-16 py-16" data-aos="fade-up">
+        <p class="text-4xl font-megina tracking-widest uppercase text-[#4F2972] mb-4">Process:</p>
+        <div class="flex gap-4">
+            <div class="w-1/6">
+                <img src="{{ url_for('static', filename='images/snake1em.png') }}" alt="Process 1" class="w-full object-cover mb-4">
+                <img src="{{ url_for('static', filename='images/snake1em.png') }}" alt="Process 2" class="w-full object-cover mb-4">
+            </div>
+            <div class="w-1/6">
+                <img src="{{ url_for('static', filename='images/snake1em.png') }}" alt="Process 3" class="w-full object-cover mb-4">
+                <img src="{{ url_for('static', filename='images/snake1em.png') }}" alt="Process 4" class="w-full object-cover mb-4">
+            </div>
+            <div class="w-1/6">
+                <img src="{{ url_for('static', filename='images/snake1em.png') }}" alt="Process 5" class="w-full object-cover mb-4">
+                <img src="{{ url_for('static', filename='images/snake1em.png') }}" alt="Process 6" class="w-full object-cover mb-4">
+            </div>
+            <p><span class="font-garamond text-xl text-[#4F2972]">About Process</span></p>
+        </div>
+
+    </div>
+
+    <!-- Iterations Section -->
+    <div class="w-full border-t border-[#CEC2E0] px-16 py-16" data-aos="fade-up">
+        <p class="text-4xl font-megina tracking-widest uppercase text-[#4F2972] mb-4">Iterations:</p>
+        <div class="flex gap-8">
+            <div class="w-1/4 flex flex-col items-center">
+                <img src="{{ url_for('static', filename='images/snake1em.png') }}" alt="Iteration 1" class="w-full object-cover mb-4">
+                <img src="{{ url_for('static', filename='images/snake1em.png') }}" alt="Iteration 3" class="w-full object-cover mb-4">
+            </div>
+            <div class="w-1/4 flex flex-col items-center">
+                <img src="{{ url_for('static', filename='images/snake1em.png') }}" alt="Iteration 2" class="w-full object-cover mb-4">
+                <img src="{{ url_for('static', filename='images/snake1em.png') }}" alt="Iteration 4" class="w-full object-cover mb-4">
+            </div>
+            <p><span class="font-garamond text-xl text-[#4F2972]">About Iterations</span></p>
+        </div>
+    </div>
+
+    <!-- Final -->
+    <div class="w-full border-t border-[#CEC2E0] px-16 py-16" data-aos="fade-up">
+        <p class="text-4xl font-megina tracking-widest uppercase text-[#4F2972] mb-4">Final Product:</p>
+        <div class="flex gap-8">
+            <div class="w-1/2 flex flex-col items-center">
+                <img src="{{ url_for('static', filename='images/snake1em.png') }}" alt="Final 1" class="w-full object-cover mb-4">
+            </div>
+            <div class="w-1/2 flex flex-col items-center">
+                <img src="{{ url_for('static', filename='images/snake1em.png') }}" alt="Final 2" class="w-full object-cover mb-4">
+            </div>
+        </div>
+    </div>
+
+
+     <!-- Footer -->
+    <footer class="w-full border-t border-white bg-[#CEC2E0] px-8 py-6 flex items-center justify-between">
+        <div class="flex flex-col gap-1">
+            <p class="text-lg font-megina tracking-widest">emilybreedlove.design@gmail.com</p>
+            <a href="https://www.linkedin.com/in/emily-breedlove-989a7b28a/" target="_blank" class="text-md font-garamond tracking-widest uppercase underline hover:text-[#4A2880] transition-colors">LinkedIn</a>
+            <p class="text-lg font-megina tracking-widest uppercase text-[#4F2972]">© 2026 Emily Breedlove</p>
+        <div>
+    </footer>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+
+    <script>
+    let lastScroll = 0;
+    const header = document.querySelector('header');
+
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.scrollY;
+
+        if (currentScroll > lastScroll && currentScroll > 80) {
+            // Scrolling down - hide header
+            header.style.transform = 'translateY(-100%)';
+            header.style.transition = 'transform 0.3s ease';
+        } else {
+            // Scrolling up - show header
+            header.style.transform = 'translateY(0)';
+            header.style.transition = 'transform 0.3s ease';
+        }
+
+        lastScroll = currentScroll;
+    });
+    </script>
+</body>
+</html>

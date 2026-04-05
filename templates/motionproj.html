@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artwork — Emily Breedlove</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        megina: ['Megina', 'serif'],
+                        garamond: ['EB Garamond', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-white text-[#4F2972]">
+
+        <!-- Header -->
+        <header class="fixed top-0 left-0 w-full bg-[#CEC2E0] px-8 py-6 flex items-center gap-4 z-50 border-b border-[#4F2972]">
+            <a href="/">
+                <img src="{{ url_for('static', filename='images/Emilylogo.png') }}" alt="Emily Breedlove Logo" class="w-20 h-20 rounded-full" style="mix-blend-mode: multiply;">
+            </a>
+            <nav class="ml-auto flex gap-8">
+                <a href="/about" class="text-xl font-megina tracking-widest uppercase hover:text-[#4A2880] transition-colors">About</a>
+                <a href="/Gallery" class="text-xl font-megina tracking-widest uppercase hover:text-[#4A2880] transition-colors">Gallery</a>
+                <a href="{{ url_for('static', filename='images/EmResume.png') }}" target="_blank" class="text-xl font-megina tracking-widest uppercase hover:text-[#4A2880] transition-colors">Resume</a>
+            </nav>
+        </header>
+
+
+        <!-- Hero Section -->
+        <div class="relative w-full h-[600px]">
+            <!-- Background Image -->
+            <img src="{{ url_for('static', filename='images/motionproj/animationhero.jpeg') }}" alt="Hero" class="w-full h-full object-cover min-h-[600px]">
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-[#CEC2E0] opacity-60"></div>
+            <!-- Text on top -->
+            <div class="absolute inset-0 flex flex-col justify-center px-16 gap-4">
+                <a href="/Gallery" class="text-lg font-garamond tracking-widest uppercase text-[#4A2880] hover:underline">← Back to Gallery</a>
+                <h2 class="text-6xl font-megina text-[#4F2972]">MOTION GRAPHIC</h2>
+                <p class="font-garamond text-xl text-[#4F2972]">October 2025</p>
+                <p class="font-garamond text-xl text-[#4F2972] max-w-2xl"> This project consists of
+                    your full name animating typography
+                    with an emphasis on creativity and clarity of 
+                    communication. It is an opportunity to explore 
+                    the various ways of moving images in After 
+                    Effects. Through this project, you will explore 
+                    how the moving images on the screen change 
+                    and evolve with graphic composition. The 
+                    overall length will range from 5 to 10 seconds </p>
+            </div>
+        </div>
+
+        <!-- Referances Section -->
+        <div class="w-full border-t border-[#CEC2E0] px-16 py-16" data-aos="fade-up">
+            <p class="text-4xl font-megina tracking-widest uppercase text-[#4F2972] mb-4">References:</p>
+            <div class="flex">
+                <div class="w-1/3 flex flex-col items-center pr-8">
+                    <img src="{{ url_for('static', filename='images/motionproj/referancemotion1.png') }}" alt="Process 1" class="w-4/5 object-cover mb-4">
+                    <a href="https://pin.it/jOYn0NTb8" target="_blank" class="text-md font-garamond tracking-widest uppercase underline hover:text-[#4A2880] transition-colors">https://pin.it/jOYn0NTb8</a>
+                </div>
+                <div class="w-1/3 flex flex-col items-center pr-8">
+                    <img src="{{ url_for('static', filename='images/motionproj/referancemotion2.png') }}" alt="Process 1" class="w-4/5 object-cover mb-4">
+                    <a href="https://pin.it/49crPvTNr" target="_blank" class="text-md font-garamond tracking-widest uppercase underline hover:text-[#4A2880] transition-colors">https://pin.it/49crPvTNr</a>
+                </div>
+                <div class="w-1/3 flex flex-col items-center pr-8">
+                    <img src="{{ url_for('static', filename='images/motionproj/referancemotion3.png') }}" alt="Process 1" class="w-4/5 object-cover mb-4">
+                    <a href="https://pin.it/2LrWeLjvQ" target="_blank" class="text-md font-garamond tracking-widest uppercase underline hover:text-[#4A2880] transition-colors">https://pin.it/2LrWeLjvQ</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Storyboard Section -->
+        <div class="w-full border-t border-[#CEC2E0] px-16 py-16" data-aos="fade-up">
+            <p class="text-4xl font-megina tracking-widest uppercase text-[#4F2972] mb-4">Story Board:</p>
+            <div class="flex">
+                <div class="w-full flex flex-col items-end">
+                    <img src="{{ url_for('static', filename='images/motionproj/motionstoryboard.png') }}" alt="Process 1" class="w-2/3 object-cover mb-4">
+                </div>
+            </div>
+        </div>
+
+        <!-- Scene Section -->
+        <div class="w-full border-t border-[#CEC2E0] px-16 py-16" data-aos="fade-up">
+            <p class="text-4xl font-megina tracking-widest uppercase text-[#4F2972] mb-4">Scenes:</p>
+            <div class="flex gap-4 items-center">
+                <div class="w-1/2 flex items-center pt-4">
+                    <p><span class="font-garamond text-lg text-[#4F2972]">I knew from the beginning that I wanted my name to be written in to make it feel 
+                    handwritten. I wanted to also start with a plain background so that when the first name is 
+                    introduced that’s the main focus point.</span></p>
+                </div>
+                <div class="w-1/2 flex flex-col items-center">
+                    <img src="{{ url_for('static', filename='images/motionproj/scene1motion.png') }}" alt="Iteration 2" class="w-4/5 object-contain mb-4">
+                </div>
+            </div>
+            <div class = "flex gap-4 items-center">
+                <div class="w-1/2 flex flex-col items-center">
+                    <img src="{{ url_for('static', filename='images/motionproj/scene2motion.png') }}" alt="Iteration 2" class="w-4/5 object-contain mb-4">
+                </div>
+                <div class="w-1/2 flex items-center pt-4">
+                    <p><span class="font-garamond text-lg text-[#4F2972]">I purposefully wanted the dot of the i to not be scripted in so it could fall down and make 
+                    the stem of the “i” bounce as it lands on it. I wanted it to be interesting and create that 
+                    funky and bouncy vibe. This helps lead into the next frame where the last name appears 
+                    and bounces the name. By adding the dot bouncing on the stem of the “i” helped make it 
+                    feel cohesive. </span></p>
+                </div>
+            </div>
+            <div class="flex gap-4 items-center">
+                <div class="w-1/2 flex items-start pt-4">
+                    <p><span class="font-garamond text-lg text-[#4F2972]">As the last name pops it in return make the “emily” pop up as well which sends the dot of the “i” up as well. It rolls back and forth on the base of the “i”. I did this on purpose 
+                    because it felt like the animation was trying to wrap up while still keeping the fun vibe to it.</span></p>
+                </div>
+                <div class="w-1/2 flex flex-col items-center">
+                    <img src="{{ url_for('static', filename='images/motionproj/scene4motion.png') }}" alt="Iteration 2" class="w-4/5 object-contain mb-4">
+                </div>
+            </div>
+            <div class="flex gap-8 items-center">
+                <div class="w-1/2 flex flex-col items-center">
+                    <img src="{{ url_for('static', filename='images/motionproj/scene5motion.png') }}" alt="Iteration 2" class="w-4/5 object-contain mb-4">
+                </div>
+                <div class="w-1/2 flex items-center pt-4">
+                    <p><span class="font-garamond text-lg text-[#4F2972]">To start the process of looping I had the dot of the “i” jump up and bounce off the “y” while 
+                    increasing in scale so it could roll across screen and reset the screen. I also wanted a fun 
+                    way to make the darker bottom blue color disappear which is why it rotates out of frame 
+                    to make way for the loop to start. </span></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Moodboard Section -->
+        <div class="w-full border-t border-[#CEC2E0] px-16 py-16" data-aos="fade-up">
+            <p class="text-4xl font-megina tracking-widest uppercase text-[#4F2972] mb-4">Moodboard:</p>
+            <div class="flex">
+                <div class="w-full flex flex-col items-end">
+                    <img src="{{ url_for('static', filename='images/motionproj/moodboardmotion.png') }}" alt="Process 1" class="w-1/2 object-cover mb-4">
+                </div>
+            </div>
+        </div>
+
+        <!-- Final -->
+        <div class="w-full border-t border-[#CEC2E0] px-16 py-16" data-aos="fade-up">
+            <p class="text-4xl font-megina tracking-widest uppercase text-[#4F2972] mb-4">Final Design:</p>
+            <div class="flex items-start justify-center p-10 px-1">
+                <video id="port-video" autoplay muted loop playsinline class="w-4/5 h-auto">
+                    <source src="{{ url_for('static', filename='PORT2CLIP.mp4') }}" type="video/mp4">
+                </video>
+            </div>
+        </div>
+     <!-- Footer -->
+    <footer class="w-full border-t border-white bg-[#CEC2E0] px-8 py-6 flex items-center justify-between">
+        <div class="flex flex-col gap-1">
+            <p class="text-lg font-megina tracking-widest">emilybreedlove.design@gmail.com</p>
+            <a href="https://www.linkedin.com/in/emily-breedlove-989a7b28a/" target="_blank" class="text-md font-garamond tracking-widest uppercase underline hover:text-[#4A2880] transition-colors">LinkedIn</a>
+            <p class="text-lg font-megina tracking-widest uppercase text-[#4F2972]">© 2026 Emily Breedlove</p>
+        <div>
+    </footer>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+
+    <script>
+    let lastScroll = 0;
+    const header = document.querySelector('header');
+
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.scrollY;
+
+        if (currentScroll > lastScroll && currentScroll > 80) {
+            // Scrolling down - hide header
+            header.style.transform = 'translateY(-100%)';
+            header.style.transition = 'transform 0.3s ease';
+        } else {
+            // Scrolling up - show header
+            header.style.transform = 'translateY(0)';
+            header.style.transition = 'transform 0.3s ease';
+        }
+
+        lastScroll = currentScroll;
+    });
+    </script>
+</body>
+</html>
