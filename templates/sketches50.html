@@ -23,13 +23,15 @@
 <body class="bg-white text-[#4F2972]">
 
     <!-- Header -->
-    <header class="fixed top-0 left-0 w-full bg-[#CEC2E0] px-8 py-6 flex items-center gap-4 z-50 border-b border-[#4F2972]">
+    <header class="fixed top-0 left-0 w-full bg-[#CEC2E0] px-4 md:px-8 py-4 md:py-6 flex items-center gap-4 z-50 border-b border-white">
         <a href="/">
-            <img src="{{ url_for('static', filename='images/Emilylogo.png') }}" alt="Emily Breedlove Logo" class="w-20 h-20 rounded-full" style="mix-blend-mode: multiply;">
+            <img src="{{url_for('static', filename='images/Emilylogo.png') }}" alt="Emily Breedlove Logo" class="w-12 h-12 md:w-20 md:h-20 rounded-full" style="mix-blend-mode: multiply;">
         </a>
-        <nav class="ml-auto flex gap-8">
-            <a href="/about" class="text-xl font-megina tracking-widest uppercase hover:text-[#4A2880] transition-colors">About</a>
-            <a href="/Gallery" class="text-xl font-megina tracking-widest uppercase hover:text-[#4A2880] transition-colors">Gallery</a>
+
+        <nav class="ml-auto flex gap-4 md:gap-8">
+            <a href="/about" class="text-sm md:text-xl font-megina tracking-widest uppercase hover:text-[#4A2880] transition-colors">About</a>
+            <a href="/Gallery" class="text-sm md:text-xl font-megina tracking-widest uppercase hover:text-[#4A2880] transition-colors">Gallery</a>
+            <a href="{{ url_for('static', filename='images/EmResume.png') }}" target="_blank" class="text-sm md:text-xl font-megina tracking-widest uppercase hover:text-[#4A2880] transition-colors">Resume</a>
         </nav>
     </header>
 
