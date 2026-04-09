@@ -23,63 +23,63 @@
 <body class="bg-[#CEC2E0] text-[#4F2972]">
 
     <!-- Header -->
-    <header class="fixed top-0 left-0 w-full bg-[#CEC2E0] px-8 py-6 flex items-center gap-4 z-50 border-b border-white">
+    <header class="fixed top-0 left-0 w-full bg-[#CEC2E0] px-4 md:px-8 py-4 md:py-6 flex items-center gap-4 z-50 border-b border-white">
         <a href="/">
-            <img src="{{url_for('static', filename='images/Emilylogo.png') }}" alt="Emily Breedlove Logo" class="w-20 h-20 rounded-full" style="mix-blend-mode: multiply;">
+            <img src="{{url_for('static', filename='images/Emilylogo.png') }}" alt="Emily Breedlove Logo" class="w-12 h-12 md:w-20 md:h-20 rounded-full" style="mix-blend-mode: multiply;">
         </a>
 
-        <nav class="ml-auto flex gap-8">
-            <a href="/about" class="text-xl font-megina tracking-widest uppercase hover:text-[#4A2880] transition-colors">About</a>
-            <a href="/Gallery" class="text-xl font-megina tracking-widest uppercase hover:text-[#4A2880] transition-colors">Gallery</a>
-            <a href="{{ url_for('static', filename='images/EmResume.png') }}" target="_blank" class="text-xl font-megina tracking-widest uppercase hover:text-[#4A2880] transition-colors">Resume</a>
+        <nav class="ml-auto flex gap-4 md:gap-8">
+            <a href="/about" class="text-sm md:text-xl font-megina tracking-widest uppercase hover:text-[#4A2880] transition-colors">About</a>
+            <a href="/Gallery" class="text-sm md:text-xl font-megina tracking-widest uppercase hover:text-[#4A2880] transition-colors">Gallery</a>
+            <a href="{{ url_for('static', filename='images/EmResume.png') }}" target="_blank" class="text-sm md:text-xl font-megina tracking-widest uppercase hover:text-[#4A2880] transition-colors">Resume</a>
         </nav>
     </header>
 
     <!-- White divider line -->
-    <div class="w-full h-px bg-[#CEC2E0] mt-20"></div>
+    <div class="w-full h-px bg-[#CEC2E0] mt-16 md:mt-20"></div>
 
     <!-- Main Content -->
-    <section class="flex" data-aos="fade-up">
+    <section class="flex flex-col md:flex-row" data-aos="fade-up">
 
         <!-- Left Side - Video -->
-        <div class="w-1/2 flex items-start justify-center p-10 px-1">
+        <div class="w-full md:w-1/2 flex items-start justify-center p-4 md:p-10 md:px-1">
             <video id="port-video" autoplay muted playsinline class="w-full h-auto">
                 <source src="{{ url_for('static', filename='PORT1CLIP.mp4') }}" type="video/mp4">
             </video>
         </div>
 
         <!-- Right Side - About -->
-        <div class="w-1/2 flex flex-col justify-start pt-16 p-4">
-            <h2 class="text-6xl font-megina text-[#4F2972] mb-6 leading-tight"> HELLO!</h2>
-            <p class="text-2xl font-garamond text-[#4F2972] leading-relaxed">Hey there! I'm Emily Breedlove, a sophomore in Visual Communication Design at Purdue University. I have a background in photography and marketing. I have experience in Adobe Photoshop, Adobe Illustrator, Adobe InDesign, Adobe After Effects, Adobe Dimension and Rhino 3D. I'm passionate about creating things that excite me like climate change, wildlife and domestic animal protection.</p>
+        <div class="w-full md:w-1/2 flex flex-col justify-start pt-4 md:pt-16 p-4">
+            <h2 class="text-4xl md:text-6xl font-megina text-[#4F2972] mb-4 md:mb-6 leading-tight"> HELLO!</h2>
+            <p class="text-lg md:text-2xl font-garamond text-[#4F2972] leading-relaxed">Hey there! I'm Emily Breedlove, a sophomore in Visual Communication Design at Purdue University. I have a background in photography and marketing. I have experience in Adobe Photoshop, Adobe Illustrator, Adobe InDesign, Adobe After Effects, Adobe Dimension and Rhino 3D. I'm passionate about creating things that excite me like climate change, wildlife and domestic animal protection.</p>
         </div>
     </section>
 
-    <div class="flex justify-center pt-0 pb-20" data-aos="fade-up">
+    <div class="flex justify-center pt-0 pb-10 md:pb-20" data-aos="fade-up">
         <svg width="100%" height="60" viewBox="0 0 1440 60" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 30 C90 0, 180 60, 360 30 S540 0, 720 30 S900 60, 1080 30 S1260 0, 1440 30" 
                 stroke="#4F2972" stroke-width="4" fill="none"/>
         </svg>
     </div>
 
-    <div class="flex justify-center gap-8 pt-2 pb-16 px-16" data-aos="fade-up">
-        <img src="{{ url_for('static', filename='images/designhistproj/coverbackflat.jpeg') }}" class="w-1/2 object-contain">
-        <img src="{{ url_for('static', filename='images/PinProj/pinprojsquare.jpeg') }}" class="w-1/2 object-contain">
+    <div class="flex flex-col md:flex-row justify-center gap-8 pt-2 pb-16 px-4 md:px-16" data-aos="fade-up">
+        <img src="{{ url_for('static', filename='images/designhistproj/coverbackflat.jpeg') }}" class="w-full md:w-1/2 object-contain">
+        <img src="{{ url_for('static', filename='images/PinProj/pinprojsquare.jpeg') }}" class="w-full md:w-1/2 object-contain">
     </div>
 
-    <div class="flex justify-center py-24" data-aos="fade-up">
-        <a href="/Gallery" class="px-24 py-8 bg-pink-400 font-megina text-2xl tracking-widest uppercase hover:bg-pink-500 transition-colors rounded-full">
+    <div class="flex justify-center py-12 md:py-24" data-aos="fade-up">
+        <a href="/Gallery" class="px-12 md:px-24 py-6 md:py-8 bg-pink-400 font-megina text-lg md:text-2xl tracking-widest uppercase hover:bg-pink-500 transition-colors rounded-full">
             Select Works
         </a>
     </div>
 
 
     <!-- Footer -->
-    <footer class="w-full border-t border-white px-8 py-6 flex items-center justify-between">
+    <footer class="w-full border-t border-white px-4 md:px-8 py-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
         <div class="flex flex-col gap-1">
-            <p class="text-lg font-megina tracking-widest">emilybreedlove.design@gmail.com</p>
-            <a href="https://www.linkedin.com/in/emily-breedlove-989a7b28a/" target="_blank" class="text-md font-garamond tracking-widest uppercase underline hover:text-[#4A2880] transition-colors">LinkedIn</a>
-            <p class="text-lg font-megina tracking-widest uppercase font-[#4F2972]">© 2026 Emily Breedlove</p>
+            <p class="text-sm md:text-lg font-megina tracking-widest">emilybreedlove.design@gmail.com</p>
+            <a href="https://www.linkedin.com/in/emily-breedlove-989a7b28a/" target="_blank" class="text-sm md:text-md font-garamond tracking-widest uppercase underline hover:text-[#4A2880] transition-colors">LinkedIn</a>
+            <p class="text-sm md:text-lg font-megina tracking-widest uppercase font-[#4F2972]">© 2026 Emily Breedlove</p>
         <div>
     </footer>
 
