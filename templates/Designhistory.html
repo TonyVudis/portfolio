@@ -43,11 +43,11 @@
         <!-- Overlay -->
         <div class="absolute inset-0 bg-[#CEC2E0] opacity-60"></div>
         <!-- Text on top -->
-        <div class="absolute inset-0 flex flex-col justify-center px-16 gap-4 pt-24">
+        <div class="absolute inset-0 flex flex-col justify-center px-4 md:px-16 gap-2 md:gap-4 pt-24">
             <a href="/Gallery" class="text-lg font-garamond tracking-widest uppercase text-[#4A2880] hover:underline">← Back to Gallery</a>
-            <h2 class="text-6xl font-megina text-[#4F2972]">DESIGN HISTORY BOOK</h2>
-            <p class="font-garamond text-xl text-[#4F2972]">April 2026</p>
-            <p class="font-garamond text-xl text-black max-w-2xl">For this project, creating an eight-page, saddle stitched booklet
+            <h2 class="text-3xl md:text-6xl font-megina text-[#4F2972]">DESIGN HISTORY BOOK</h2>
+            <p class="font-garamond text-sm md:text-xl text-[#4F2972]">April 2026</p>
+            <p class="font-garamond text-sm md:text-xl text-black max-w-2xl">For this project, creating an eight-page, saddle stitched booklet
             incorporating self written text based on the Design History Essay.
             Using a grid system layout and designing a design movement or
             designer.</p>
@@ -55,21 +55,21 @@
     </div>
 
     <!-- Process Section -->
-    <div class="w-full border-t border-[#CEC2E0] px-16 py-16" data-aos="fade-up">
-        <p class="text-4xl font-megina tracking-widest uppercase text-[#4F2972] mb-4">Process:</p>
-        <div class="flex">
-            <div class="w-1/2 flex flex-col items-center pr-8">
+    <div class="w-full border-t border-[#CEC2E0] px-4 md:px-16 py-4 md:py-16" data-aos="fade-up">
+        <p class="text-xl md:text-4xl font-megina tracking-widest uppercase text-[#4F2972] mb-4">Process:</p>
+        <div class="flex flex-col md:flex-row">
+            <div class="w-full md:w-1/2 flex flex-col items-center pr-8">
                 <img src="{{ url_for('static', filename='images/designhistproj/sketch1history.png') }}" alt="Process 1" class="w-4/5 object-cover mb-4">
                 <img src="{{ url_for('static', filename='images/designhistproj/sketch2history.png') }}" alt="Process 2" class="w-4/5 object-cover mb-4">
 
             </div>
-            <div class="w-1/2 flex flex-col items-center pl-8 border-l border-[#CEC2E0]">
+            <div class="w-full md:w-1/2 flex flex-col items-center pl-8 border-l border-[#CEC2E0]">
                 <img src="{{ url_for('static', filename='images/designhistproj/sketch3history.png') }}" alt="Process 2" class="w-4/5 object-cover mb-4">
                 <img src="{{ url_for('static', filename='images/designhistproj/sketch4history.png') }}" alt="Process 2" class="w-4/5 object-cover mb-4">
 
             </div>
-            <div class="w-1/2 flex flex-col items-center pl-8 border-l border-[#CEC2E0]">
-                <p><span class="font-garamond text-xl text-[#4F2972]">I struggled at first finding a grid system
+            <div class="w-full md:w-1/2 flex flex-col items-center pl-8 border-l border-[#CEC2E0]">
+                <p><span class="font-garamond text-sm md:text-xl text-[#4F2972]">I struggled at first finding a grid system
                 that I found that was interesting and still
                 had that Art Nouveau style of movement.
                 Having this basis of the sketching was
@@ -83,18 +83,18 @@
     <!-- page1 Iterations Section -->
     <div class="w-full border-t border-[#CEC2E0] px-16 py-16" data-aos="fade-up">
         <p class="text-4xl font-megina tracking-widest uppercase text-[#4F2972] mb-4">Page 1 Iterations:</p>
-        <div class="flex gap-1">
-            <div class="w-1/2 flex flex-col items-center">
+        <div class="flex flex-col md:flex-row gap-1">
+            <div class="w-full md:w-1/2 flex flex-col items-center">
                 <img src="{{ url_for('static', filename='images/designhistproj/iteration11history.png') }}" alt="Iteration 1" class="w-4/5 object-cover mb-4">
                 <img src="{{ url_for('static', filename='images/designhistproj/iteration12history.png') }}" alt="Iteration 1" class="w-4/5 object-cover mb-4">
             </div>
-            <div class="w-1/2 flex flex-col items-center">
+            <div class="w-full md:w-1/2 flex flex-col items-center">
                 <img src="{{ url_for('static', filename='images/designhistproj/iteration13history.png') }}" alt="Iteration 3" class="w-4/5 object-cover mb-4">
                 <img src="{{ url_for('static', filename='images/designhistproj/iteration14history.png') }}" alt="Iteration 1" class="w-4/5 object-cover mb-4">
                 <img src="{{ url_for('static', filename='images/designhistproj/iteration15history.png') }}" alt="Iteration 1" class="w-4/5 object-cover mb-4">
             </div>
-            <div class="w-1/2 flex flex-col items-center ml-auto">
-                <p><span class="font-garamond text-xl text-[#4F2972]">I struggled with this design because I wanted
+            <div class="w-full md:w-1/2 flex flex-col items-center ml-auto">
+                <p><span class="font-garamond text-sm md:text-xl text-[#4F2972]">I struggled with this design because I wanted
                 something that flowed over onto the back page to make it more visually interesting. I tried working around with different color
                 combinations and different typography. I
                 wanted something that was bold but wasn’t
@@ -110,16 +110,16 @@
     <!-- page2 Iterations Section -->
     <div class="w-full border-t border-[#CEC2E0] px-16 py-16" data-aos="fade-up">
         <p class="text-4xl font-megina tracking-widest uppercase text-[#4F2972] mb-4">Page 2 Iterations:</p>
-        <div class="flex gap-8">
-            <div class="w-1/2 flex flex-col items-center">
+        <div class="flex flex-col md:flex-row gap-8">
+            <div class="w-full md:w-1/2 flex flex-col items-center">
                 <img src="{{ url_for('static', filename='images/designhistproj/iteration21history.png') }}" alt="Iteration 1" class="w-4/5 object-cover mb-4">
                 <img src="{{ url_for('static', filename='images/designhistproj/iteration22history.png') }}" alt="Iteration 1" class="w-4/5 object-cover mb-4">
             </div>
-            <div class="w-1/2 flex items-center">
+            <div class="w-full md:w-1/2 flex flex-col md:flex-row items-center">
                 <img src="{{ url_for('static', filename='images/designhistproj/iteration23history.png') }}" alt="Iteration 3" class="w-4/5 object-cover mb-4">
             </div>
-            <div class="w-1/2 flex flex-col items-center ml-auto">
-                <p><span class="font-garamond text-xl text-[#4F2972]">I knew from the beginning that i wanted more text and design interaction to create a unique Art Nouveau
+            <div class="w-full md:w-1/2 flex flex-col items-center ml-auto">
+                <p><span class="font-garamond text-sm md:text-xl text-[#4F2972]">I knew from the beginning that i wanted more text and design interaction to create a unique Art Nouveau
                      magazine. I incorporated ornate designs and flowers pieces at first. Then I started to progress and made bigger design elements with the text as the smaller 
                      piece to create a more intriguing design. 
                 </span></p>
