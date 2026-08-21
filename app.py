@@ -14,6 +14,10 @@ def about():
 def Gallery():
     return render_template('Gallery.html')
 
+@app.route('/Photography')
+def Photography():
+    return render_template('photography.html')
+
 @app.route('/Gallery/snake1em')
 def snake1em():
     return render_template('snake1em.html')
