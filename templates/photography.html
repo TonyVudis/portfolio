@@ -38,61 +38,56 @@
 
     <div class="px-4 md:px-8 pt-20 pb-8 text-center">
         <h2 class="text-2xl md:text-5xl font-megina">GALLERY</h2>
-    </div>  
-
-    <!-- PROJECT SECTION -->
-    <div class="px-4 md:px-8 pb-16 grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-6 min-h-screen">
-
-         <!-- Design history book -->
-        <a href="/Gallery/Designhistory" class="block mb-6 group" data-aos="fade-up">
-            <div class="flex overflow-hidden">
-                <img src="{{ url_for('static', filename='images/designhistproj/page3square.jpeg') }}" alt="Placeholder" class="w-full object-contain bg-[#CEC2E0] group-hover:scale-105 transition-transform duration-500">
-            </div>
-            <p class="mt-2 text-sm md:text-lg font-garamond text-center tracking-widest uppercase text-[#4A2880]">Design History Book</p>
-        </a>
-
-        <!-- TYPO design poster -->
-        <a href="/Gallery/Typodesignpos" class="block mb-6 group" data-aos="fade-up">
-            <div class="flex overflow-hidden">
-                <img src="{{ url_for('static', filename='images/Typoposterproj/typeposterdquare.jpeg') }}" alt="Placeholder" class="w-full object-contain bg-[#CEC2E0] group-hover:scale-105 transition-transform duration-500">
-            </div>
-            <p class="mt-2 text-sm md:text-lg font-garamond text-center tracking-widest uppercase text-[#4A2880]">TYPOGRAPHY DESIGN POSTER</p>
-        </a>
-
-       
-        <!-- Movie -->
-        <a href="/Gallery/Movieposter" class="block mb-6 group" data-aos="fade-up">
-            <div class="flex overflow-hidden">
-                <img src="{{ url_for('static', filename='images/MoviepProj/moviepostersquare.jpeg') }}" alt="Placeholder" class="w-full object-contain bg-[#CEC2E0] group-hover:scale-105 transition-transform duration-500">
-            </div>
-            <p class="mt-2 text-sm md:text-lg font-garamond text-center tracking-widest uppercase text-[#4A2880]">Surreal Movie Poster</p>
-        </a>
-
-        <!-- clairoproj -->
-        <a href="/Gallery/clairoproj" class="block mb-6 group" data-aos="fade-up">
-            <div class="flex overflow-hidden">
-                <img src="{{ url_for('static', filename='images/clairoproj/clairosquare.jpeg') }}" alt="Placeholder" class="w-full object-contain bg-[#CEC2E0] group-hover:scale-105 transition-transform duration-500">
-            </div>
-            <p class="mt-2 text-sm md:text-lg font-garamond text-center tracking-widest uppercase text-[#4A2880]">Magazine Cover and Spread Design</p>
-        </a>
-
-        <!-- Snake -->
-        <a href="/Gallery/snakeproj" class="block mb-6 group" data-aos="fade-up">
-            <div class="flex overflow-hidden">
-                <img src="{{ url_for('static', filename='images/snakeproj/snakesquare.jpeg') }}" alt="Placeholder" class="w-full object-contain bg-[#CEC2E0] group-hover:scale-105 transition-transform duration-500">
-            </div>
-            <p class="mt-2 text-sm md:text-lg font-garamond text-center tracking-widest uppercase text-[#4A2880]">Symbol and Logotype</p>
-        </a>
-
-        <!-- Bookproj -->
-        <a href="/Gallery/bookproj" class="block mb-6 group" data-aos="fade-up">
-            <div class="flex overflow-hidden">
-                <img src="{{ url_for('static', filename='images/bookproj/3booksspreadstack.png') }}" alt="Placeholder" class="w-full object-contain bg-[#CEC2E0] group-hover:scale-105 transition-transform duration-500">
-            </div>
-            <p class="mt-2 text-sm md:text-lg font-garamond text-center tracking-widest uppercase text-[#4A2880]">Book Cover Design Series</p>
-        </a>
     </div>
 
+    <!-- PHOTOGRAPHY SECTION -->
+    <div class="px-4 md:px-8 pb-16 grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-6 min-h-screen">
+
+        <!-- LIGHTING STAIRCASE-->
+        <div class="gallery-item group relative mb-6 overflow-hidden" data-aos="fade-up">
+            <img src="{{ url_for('static', filename='images/designhistproj/page3square.jpeg') }}" alt="Design History Book" class="w-full object-contain bg-[#CEC2E0] transition-transform duration-300 group-hover:scale-105">
+            <div class="absolute inset-0 flex items-center justify-center bg-[#4F2972]/0 group-hover:bg-[#4F2972]/50 transition-colors duration-300">
+                <p class="text-white text-sm md:text-lg font-garamond tracking-widest uppercase text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4">Design History Book</p>
+            </div>
+        </div>
+
+        <!-- STAIRCASE -->
+        <div class="gallery-item group relative mb-6 overflow-hidden" data-aos="fade-up">
+            <img src="{{ url_for('static', filename='images/Typoposterproj/typeposterdquare.jpeg') }}" alt="Typography Design Poster" class="w-full object-contain bg-[#CEC2E0] transition-transform duration-300 group-hover:scale-105">
+            <div class="absolute inset-0 flex items-center justify-center bg-[#4F2972]/0 group-hover:bg-[#4F2972]/50 transition-colors duration-300">
+                <p class="text-white text-sm md:text-lg font-garamond tracking-widest uppercase text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4">Typography Design Poster</p>
+            </div>
+        </div>
+
+        <!-- FISHY -->
+        <div class="gallery-item group relative mb-6 overflow-hidden" data-aos="fade-up">
+            <img src="{{ url_for('static', filename='images/MoviepProj/moviepostersquare.jpeg') }}" alt="Surreal Movie Poster" class="w-full object-contain bg-[#CEC2E0] transition-transform duration-300 group-hover:scale-105">
+            <div class="absolute inset-0 flex items-center justify-center bg-[#4F2972]/0 group-hover:bg-[#4F2972]/50 transition-colors duration-300">
+                <p class="text-white text-sm md:text-lg font-garamond tracking-widest uppercase text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4">Surreal Movie Poster</p>
+            </div>
+        </div>
+
+        <!-- CHARLIELIGHT-->
+        <div class="gallery-item group relative mb-6 overflow-hidden" data-aos="fade-up">
+            <img src="{{ url_for('static', filename='images/clairoproj/clairosquare.jpeg') }}" alt="Magazine Cover and Spread Design" class="w-full object-contain bg-[#CEC2E0] transition-transform duration-300 group-hover:scale-105">
+            <div class="absolute inset-0 flex items-center justify-center bg-[#4F2972]/0 group-hover:bg-[#4F2972]/50 transition-colors duration-300">
+                <p class="text-white text-sm md:text-lg font-garamond tracking-widest uppercase text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4">Magazine Cover and Spread Design</p>
+            </div>
+        </div>
+
+        <!-- SUN-->
+        <div class="gallery-item group relative mb-6 overflow-hidden" data-aos="fade-up">
+            <img src="{{ url_for('static', filename='images/snakeproj/snakesquare.jpeg') }}" alt="Symbol and Logotype" class="w-full object-contain bg-[#CEC2E0] transition-transform duration-300 group-hover:scale-105">
+            <div class="absolute inset-0 flex items-center justify-center bg-[#4F2972]/0 group-hover:bg-[#4F2972]/50 transition-colors duration-300">
+                <p class="text-white text-sm md:text-lg font-garamond tracking-widest uppercase text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4">Symbol and Logotype</p>
+            </div>
+        </div>
+
+        <!-- WINDOW -->
+        <div class="gallery-item group relative mb-6 overflow-hidden" data-aos="fade-up">
+            <img src="{{ url_for('static', filename='images/photography/window.png') }}" alt="Window Scene, May 2026" class="w-full object-contain bg-[#CEC2E0] transition-transform duration-300 group-hover:scale-105">
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="w-full border-t border-white bg-[#CEC2E0] px-4 md:px-8 py-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
@@ -100,9 +95,9 @@
             <p class="text-sm md:text-lg font-megina tracking-widest">emilybreedlove.design@gmail.com</p>
             <a href="https://www.linkedin.com/in/emily-breedlove-989a7b28a/" target="_blank" class="text-sm md:text-md font-garamond tracking-widest uppercase underline hover:text-[#4A2880] transition-colors">LinkedIn</a>
             <p class="text-sm md:text-lg font-megina tracking-widest uppercase font-[#4F2972]">© 2026 Emily Breedlove</p>
-        <div>
+        </div>
     </footer>
-    
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
@@ -112,6 +107,7 @@
     </script>
 
     <script>
+    // Header hide/show on scroll
     let lastScroll = 0;
     const header = document.querySelector('header');
 
@@ -119,11 +115,9 @@
         const currentScroll = window.scrollY;
 
         if (currentScroll > lastScroll && currentScroll > 80) {
-            // Scrolling down - hide header
             header.style.transform = 'translateY(-100%)';
             header.style.transition = 'transform 0.3s ease';
         } else {
-            // Scrolling up - show header
             header.style.transform = 'translateY(0)';
             header.style.transition = 'transform 0.3s ease';
         }
@@ -131,6 +125,7 @@
         lastScroll = currentScroll;
     });
     </script>
+
 
 </body>
 </html>
